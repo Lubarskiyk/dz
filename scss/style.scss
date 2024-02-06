@@ -1,3 +1,8 @@
-h1 {
-	color: green($color: #000000);
-}
+/* Обнуление стилей */
+@import "_null.scss";
+/*Базовые стили*/
+@import "_base.scss";
+/* Header*/
+@import "_header.scss";
+/* Hero*/
+@import "_hero.scss";

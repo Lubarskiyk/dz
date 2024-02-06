@@ -1,3 +1,180 @@
-h1 {
-  color: 0;
+@charset "UTF-8";
+/* Обнуление стилей */
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input,
+button,
+textarea {
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  background: none;
+  box-shadow: none;
+}
+
+label,
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+/*Базовые стили*/
+body {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* Header*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: solid #e7e9fc;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  flex-grow: 1;
+  font-weight: 500;
+  color: #2e2f42;
+  padding-left: 76px;
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav li + li {
+  margin-left: 40px;
+}
+.header-nav li a:hover {
+  color: #404bbf;
+}
+.header-nav li a:active {
+  -webkit-text-decoration: underline 4px;
+          text-decoration: underline 4px;
+}
+
+.header-contacts {
+  color: #434455;
+}
+.header-contacts ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header-contacts li + li {
+  margin-left: 40px;
+}
+.header-contacts li a:hover {
+  color: #404bbf;
+}
+
+/* Hero*/
+.hero {
+  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: #2e2f42;
+}
+
+.hero-content {
+  max-width: 496px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 107%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-button {
+  border-radius: 4px;
+  padding: 16px 32px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  transition: background-color 0.3s;
+}
+.hero-button:hover {
+  background-color: #404bbf;
 }
