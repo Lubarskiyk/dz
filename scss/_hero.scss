@@ -1,8 +1,7 @@
 .hero {
-	height: 600px;
+	position: relative;
+	min-height: 600px;
 	padding-top: 188px;
-	padding-bottom: 188px;
-	background-color: #2e2f42;
 }
 .hero-content {
 	max-width: 496px;
@@ -32,5 +31,22 @@
 	transition: background-color 0.3s;
 	&:hover {
 		background-color: #404bbf;
+	}
+}
+
+.hero-bg-img {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #2e2f42;
+	img {
+		height: 100%;
+		width: 100%;
+		background-color: #2e2f42;
+		opacity: 0.7;
+		object-fit: cover;
 	}
 }
