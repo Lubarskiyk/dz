@@ -1,0 +1,27 @@
+.section-first {
+	padding-top: 120px;
+	min-height: 464px;
+}
+
+.first-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+	gap: 24px;
+}
+.feature {
+}
+.feature-img {
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+	background-color: #f4f4fd;
+	padding: 24px 100px;
+}
+.feature-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 120%;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
+}
+.feature-text {
+}
