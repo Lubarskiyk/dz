@@ -14,7 +14,7 @@
 }
 
 .header-nav {
-	flex-grow: 1;
+	flex: 1 1 auto;
 	font-weight: 500;
 	color: #2e2f42;
 	padding-left: 76px;
@@ -38,9 +38,11 @@
 	color: #434455;
 	ul {
 		display: flex;
-		justify-content: space-between;
+		justify-content: end;
+		flex-wrap: wrap;
 	}
-	li + li {
+
+	li:last-child {
 		margin-left: 40px;
 	}
 	li {

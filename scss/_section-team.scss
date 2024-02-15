@@ -1,16 +1,43 @@
 .section-team {
+	min-height: 780px;
 	background-color: #f4f4fd;
-	min-height: 500px;
-	color: red;
-	span {
-		color: gray;
+}
+
+.title {
+}
+.team-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 264px);
+	column-gap: 24px;
+	margin: 0 auto;
+}
+.personal-card {
+}
+.pesonal-img {
+}
+.personal-name {
+}
+.personal-jobtitle {
+}
+.personal-social {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.social-icon {
+	position: relative;
+	height: 40px;
+	width: 40px;
+	background-color: #4d5ae5;
+	border-radius: 50%;
+
+	img {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
 	}
-}
-.section-portfolio {
-}
-.content {
-}
-.item {
-}
-.text {
 }
